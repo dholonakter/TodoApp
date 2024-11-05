@@ -1,0 +1,17 @@
+﻿@page
+@model CleanTemplateProject.Web.Pages.IndexModel
+@{
+}
+
+<div class="todo-header">
+	<h2>ToDo List</h2>
+	<div class="todo-body">
+		<input type="text"
+			   id="todoText"
+			   class="todo-input"
+			   placeholder="Add your items" />
+		<button type="button" onclick="AddItem()" class="btn btn-default btn-sm">
+			<span class="glyphicon glyphicon-plus-sign"></span> Add
+		</button>
+	</div>
+</div>
