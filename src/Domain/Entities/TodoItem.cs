@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualBasic;
+﻿
+using System;
+using CleanTemplateProject.Domain.Enums;
 
 namespace CleanTemplateProject.Domain.Entities;
 public class TodoItem
 {
-    public int TaskID { get; set; }//?
-    public string? TaskName { get; set; }
-    //public string? Description { get; set; }
-    //public DueDate Date { get; set; }
-    //public List<string>? Steps { get; set; } this is optional
+    public int ID { get; set; }
+    public string? Name { get; set; }
+    public DateOnly Date { get; set; }
+    public List<string>? Steps { get; set; }
+    public Priority Priority { get; set; }
+    public bool IsCompleted { get; set; }
+
 }

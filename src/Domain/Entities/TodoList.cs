@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualBasic;
 
 namespace CleanTemplateProject.Domain.Entities;
 public class TodoList
 {
-    //public string? Title { get; set; }
-    public int ID { get; set; }//?
+    public int ID { get; set; }
+    public string? Title { get; set; }
+    public string? UserName { get; set; }
+    public int UserID { get; set; }
+    public DateTime Created_Date { get; set; }
     public List<TodoItem>? Items { get; set; } = new();
-   
 
-
-    public TodoList()
-    {
-        Items = new();
-    }
 }
