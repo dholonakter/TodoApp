@@ -11,5 +11,8 @@ public class TodoItem
     public List<string>? Steps { get; set; }
     public Priority Priority { get; set; }
     public bool IsCompleted { get; set; }
+    public int TodoListId { get; set; }
+    public TodoList? TodoList { get; set; }
+
 
 }
